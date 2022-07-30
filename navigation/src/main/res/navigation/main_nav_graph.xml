@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/products_flow"
+    android:id="@+id/main_nav_graph">
+
+    <include app:graph="@navigation/products_flow" />
+
+    <action
+        android:id="@+id/action_global_product_flow"
+        app:destination="@id/products_flow"
+        app:popUpTo="@id/main_nav_graph"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+</navigation>
