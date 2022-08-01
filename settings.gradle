@@ -14,3 +14,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Warehouse"
 include ':app'
+include ':navigation'
+include ':catalog'
+include ':core'
