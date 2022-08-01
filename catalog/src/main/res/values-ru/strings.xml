@@ -3,7 +3,8 @@
     <string name="item_product_code">Код: %1$s</string>
     <string name="item_product_price">%1$s₽</string>
 
-    <string name="error_get_products">Товары не найдены</string>
+    <string name="error_products_not_found">Товары не найдены</string>
+    <string name="error_get_products">Не удалось получить товары</string>
     <string name="error_internet_connection">Нет интернета, пожалуйста проверьте соединение</string>
 
     <string name="select_product_count">Остаток</string>

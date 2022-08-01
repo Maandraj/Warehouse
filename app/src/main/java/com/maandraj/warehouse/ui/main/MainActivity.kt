@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity(), ToFlowNavigatable {
             val navController = navHostFragment.navController
             navigator = Navigator(navController)
         }
-
-
     }
 
     override fun navigateToFlow(flow: NavigationFlow) {

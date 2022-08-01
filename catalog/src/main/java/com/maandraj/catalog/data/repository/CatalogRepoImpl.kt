@@ -4,6 +4,7 @@ import com.maandraj.catalog.data.api.CatalogApiService
 import com.maandraj.catalog.data.mapper.CatalogMapperImpl
 import com.maandraj.catalog.data.model.Catalog
 import com.maandraj.core.result.InternetError
+import com.maandraj.core.result.ProductsGetError
 import com.maandraj.core.result.ProductsNotFound
 import com.maandraj.core.result.ResultOf
 import kotlinx.coroutines.Dispatchers
@@ -47,7 +48,7 @@ class CatalogRepoImpl @Inject constructor(
         } catch (ex: UnknownHostException) {
             return ResultOf.Failure(InternetError, ex)
         } catch (t: Throwable) {
-            return ResultOf.Failure(ProductsNotFound, t)
+            return ResultOf.Failure(ProductsGetError, t)
         }
     }
 }
