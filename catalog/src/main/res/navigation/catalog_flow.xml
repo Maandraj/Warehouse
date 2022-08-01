@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/catalog_flow"
+    app:startDestination="@id/catalogFragment">
+
+    <fragment
+        android:id="@+id/catalogFragment"
+        android:name="com.maandraj.catalog.ui.catalog.CatalogFragment"
+        android:label="ProductsFragment" >
+        <action
+            android:id="@+id/action_productsFragment_to_selectProductFragment"
+            app:destination="@id/selectProductFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/selectProductFragment"
+        android:name="com.maandraj.catalog.ui.product.SelectProductFragment"
+        android:label="SelectProductFragment" >
+        <argument
+            android:name="product"
+            app:argType="string" />
+    </fragment>
+</navigation>

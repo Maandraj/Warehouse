@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="item_product_code">Код: %1$s</string>
+    <string name="item_product_price">%1$s₽</string>
+
+    <string name="error_get_products">Товары не найдены</string>
+    <string name="error_internet_connection">Нет интернета, пожалуйста проверьте соединение</string>
+
+    <string name="select_product_count">Остаток</string>
+    <string name="select_product_price">Цена</string>
+    <string name="select_product_retail_amount">Розничная цена</string>
+    <string name="select_product_alcohol">Алкогольная продукция</string>
+    <string name="select_product_alcohol_percent_text">Содержание спирта</string>
+    <string name="select_product_alcohol_percent"> %s%%</string>
+
+    <string name="product_alcohol_yes">Да</string>
+    <string name="product_alcohol_no">Нет</string>
+</resources>
