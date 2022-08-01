@@ -16,6 +16,7 @@ import com.maandraj.catalog.databinding.FragmentCatalogBinding
 import com.maandraj.catalog.ui.catalog.adapter.CatalogAdapter
 import com.maandraj.catalog.utils.snackbar
 import com.maandraj.core.result.InternetError
+import com.maandraj.core.result.ProductsGetError
 import com.maandraj.core.result.ProductsNotFound
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.Moshi
@@ -82,11 +83,15 @@ class CatalogFragment : Fragment(R.layout.fragment_catalog) {
         viewModel.snackbarError.observe(viewLifecycleOwner) { error ->
             when (error) {
                 ProductsNotFound -> {
+                    snackbar(binding.root, getString(R.string.error_products_not_found))
+                }
+                ProductsGetError->{
                     snackbar(binding.root, getString(R.string.error_get_products))
                 }
                 InternetError -> {
                     snackbar(binding.root, getString(R.string.error_internet_connection))
                 }
+
             }
         }
     }
