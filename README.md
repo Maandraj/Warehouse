@@ -15,6 +15,3 @@
 - Dagger 2
 - MVVM
 
-
-
-
